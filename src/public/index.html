@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Trillo</title>
+    <meta name="description" content="Unforgettable adventure ahead">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    <link href="img/favicon/tour-favicon.ico" rel="shortcut icon" type="image/x-icon">-->
+    <meta name="msapplication-TileColor" content="#da532c">
+
+    <!-- Open Graph data / Facebook Card data -->
+    <meta property="og:title" content="Hotels">
+    <meta property="og:type" content="Trillo">
+    <meta property="og:url" content="https://github.com/Steinhof">
+    <!--    <meta property="og:image" sidebar="img/favicon.svg">-->
+    <meta property="og:image:alt" content="A blue package, symbolizing what webpack does.">
+    <meta property="og:description" content="Starter boilerplate for static websites.">
+
+    <!--        Configuring Apple Web Applications-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@Steinhof">
+
+    <!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="green">
+    <meta name="apple-mobile-web-app-title" content="Trillo">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Mobile header color for Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!--    <link href="/manifest.json" rel="manifest">-->
+<link href="css/main.css" rel="stylesheet"></head>
+
+<body>
+
+<header class="header">
+
+    <a href="#">
+        <img class="header__logo" src="img/logo.svg" alt="Trillo site logo" height="3.25rem">
+    </a>
+
+    <form class="header__search-form" action="#">
+        <label class="search-form__label visuallyHidden" for="search-form__input">Search hotels input</label>
+        <input class="search-form__input" id="search-form__input" type="text" placeholder="Search hotels">
+        <button class="search-form__button btn" type="submit">
+            <svg class="services__icon-zoom icon" width="2.4rem" height="2.4rem">
+                <use href="img/sprites/nav-icons/icons.svg#icon-zoom-2-2"></use>
+            </svg>
+        </button>
+    </form>
+
+    <div class="header__services">
+
+        <div class="services__icon-box">
+            <svg class="services__icon-bookmark icon" width="2.4rem" height="2.4rem">
+                <use href="img/sprites/nav-icons/icons.svg#icon-bookmark-2-2"></use>
+            </svg>
+            <span class="services__notification">7</span>
+        </div>
+
+        <div class="services__icon-box">
+            <svg class="services__icon-chat icon" width="2.4rem" height="2.4rem">
+                <use href="img/sprites/nav-icons/icons.svg#icon-chat-46"></use>
+            </svg>
+            <span class="services__notification">13</span>
+        </div>
+
+        <div class="services__user-box">
+            <img class="services__user-photo" src="img/user.png" height="3.75rem" alt="User profile photo">
+            <span class="services__user-name">Steinhof</span>
+        </div>
+
+    </div>
+
+</header>
+
+<main class="content">
+
+    <aside class="sidebar">
+
+        <nav class="sidebar__side-nav">
+
+            <ul class="side-nav__list">
+                <li class="side-nav__item side-nav__item--active">
+                    <a href="#" class="side-nav__link">
+                        <svg class="side-nav__icon-home icon" width="2.4rem" height="2.4rem">
+                            <use href="img/sprites/nav-icons/icons.svg#icon-ic_home_24px"></use>
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link">
+                        <svg class="side-nav__icon-plane icon" width="2.4rem" height="2.4rem">
+                            <use href="img/sprites/nav-icons/icons.svg#icon-ic_flight_takeoff_24px"></use>
+                        </svg>
+                        <span>Flight</span>
+                    </a>
+                </li>
+
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link">
+                        <svg class="side-nav__icon-car icon" width="2.4rem" height="2.4rem">
+                            <use href="img/sprites/nav-icons/icons.svg#icon-ic_directions_car_24px"></use>
+                        </svg>
+                        <span>Car rental</span>
+                    </a>
+                </li>
+
+                <li class="side-nav__item">
+                    <a href="#" class="side-nav__link">
+                        <svg class="side-nav__icon-map icon" width="2.4rem" height="2.4rem">
+                            <use href="img/sprites/nav-icons/icons.svg#icon-ic_map_24px"></use>
+                        </svg>
+                        <span>Tours</span>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </aside>
+
+    <section class="hotel-view">
+
+        <div class="gallery">
+            <figure class="gallery__item">
+                <img class="gallery__photo" src="img/hotel-1.jpg" alt="Photo of Sedona hotel">
+            </figure>
+
+            <figure class="gallery__item">
+                <img class="gallery__photo" src="img/hotel-2.jpg" alt="Photo of Sedona hotel">
+            </figure>
+
+            <figure class="gallery__item">
+                <img class="gallery__photo" src="img/hotel-3.jpg" alt="Photo of Sedona hotel">
+            </figure>
+        </div>
+
+        <div class="overview">
+
+            <div class="overview__info-hotel">
+
+                <h1 class="heading__primary">
+                    Hotel Las Palmas
+                </h1>
+
+                <div class="overview__rating-box">
+
+                    <fieldset class="rating">
+
+                        <legend class="rating__caption visuallyHidden">Hotel rating</legend>
+
+                        <div class="rating__group">
+                            <input class="rating__input" id="star-1" type="radio" name="hotel" value="1">
+                            <label class="rating__star" for="star-1" aria-label="Awful"></label>
+
+                            <input class="rating__input" id="star-2" type="radio" name="hotel" value="2">
+                            <label class="rating__star" for="star-2" aria-label="Bad"></label>
+
+                            <input class="rating__input" id="star-3" type="radio" name="hotel" value="3">
+                            <label class="rating__star" for="star-3" aria-label="Medium"></label>
+
+                            <input class="rating__input" id="star-4" type="radio" name="hotel" value="4" checked>
+                            <label class="rating__star" for="star-4" aria-label="Good"></label>
+
+                            <input class="rating__input" id="star-5" type="radio" name="hotel" value="5">
+                            <label class="rating__star" for="star-5" aria-label="Amazing"></label>
+
+                            <div class="rating__focus"></div>
+                        </div>
+
+                    </fieldset>
+
+                </div>
+
+            </div>
+
+            <div class="overview__info-stats">
+                <div class="overview__location">
+                    <svg class="overview__icon-pin" width="2.4rem" height="2.4rem">
+                        <use href="img/sprites/nav-icons/icons.svg#icon-ic_location_on_24px"></use>
+                    </svg>
+                    <button class="btn-inline btn">Moscow, Russia</button>
+                </div>
+                <div class="overview__rating">
+                    <div class="overview__rating--average">8.6</div>
+                    <div class="overview__rating--count">429 votes</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="details">
+
+            <div class="description">
+
+                <article class="description__article">
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda delectus dicta expedita
+                        inventore molestias neque obcaecati sit sunt voluptate. Adipisci aliquid dolores eos quidem
+                        suscipit
+                        unde ut? Id, repellendus!
+                    </p>
+
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, corporis dolor fugiat
+                        molestias
+                        nam
+                        pariatur sequi sint temporibus ullam voluptas!
+                    </p>
+                </article>
+
+
+                <ul class="description__list">
+                    <li class="description__list-item">Close to the beach</li>
+                    <li class="description__list-item">Breakfast included</li>
+                    <li class="description__list-item">Free airport shuttle</li>
+                    <li class="description__list-item">Air conditioning</li>
+                    <li class="description__list-item">Pets allowed</li>
+                    <li class="description__list-item">We speak all languages</li>
+                    <li class="description__list-item">Perfect for families</li>
+                    <li class="description__list-item">Free wi-fi in all rooms</li>
+                </ul>
+
+
+                <div class="recommend">
+
+                    <p class="recommend__count">
+                        Mari and 3 other friends recommend this hotel
+                    </p>
+
+                    <div class="recommend__friends">
+                        <img class="recommend__photo" src="img/user-6.jpg" alt="Mari Winston">
+                        <img class="recommend__photo" src="img/user-3.jpg" alt="Preston Garvey">
+                        <img class="recommend__photo" src="img/user-4.jpg" alt="Sarah Connor">
+                        <img class="recommend__photo" src="img/user-5.jpg" alt="Random guy">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="user-reviews">
+
+                <figure class="review">
+                    <blockquote class="review__quote">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem doloribus esse, eveniet
+                        facilis harum in iure maxime.
+                    </blockquote>
+
+                    <figcaption class="review__user">
+                        <img class="review__photo" src="img/user-1.jpg" alt="Miller hotel review">
+
+                        <div class="review__user-box">
+                            <p class="review__user-name">Nick Valentine</p>
+                            <p class="review__user-date">April 21, 2019</p>
+                        </div>
+
+                        <div class="review__rating">9.4</div>
+                    </figcaption>
+                </figure>
+
+                <figure class="review">
+                    <blockquote class="review__quote">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem doloribus esse, eveniet
+                        facilis harum in iure maxime.
+                    </blockquote>
+
+                    <figcaption class="review__user">
+                        <img class="review__photo" src="img/user-2.jpg" alt="Miller hotel review">
+
+                        <div class="review__user-box">
+                            <p class="review__user-name">Anna Smith</p>
+                            <p class="review__user-date">February 13, 2018</p>
+                        </div>
+
+                        <div class="review__rating">6.4</div>
+                    </figcaption>
+                </figure>
+
+                <button class="btn-inline btn">
+                    Show all <span>&rarr;</span>
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="cta">
+
+            <div class="cta__book-now">
+                <h2 class="heading__secondary">
+                    Good news! We have 4 free rooms for yor selected dates!
+                </h2>
+            </div>
+
+            <button class="cta__btn btn">
+                <span class="btn__visible">Book now</span>
+                <span class="btn__invisible">Only 4 rooms left</span>
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script type="text/javascript" src="js/runtime~main.js"></script><script type="text/javascript" src="js/main.js"></script></body>
+
+</html>

@@ -1,0 +1,22 @@
+// -----------------------------------------------------------------------------
+// MISCELLANEOUS
+// -----------------------------------------------------------------------------
+
+/* Google placeholder animation (use @extend on input. First goes label tag then input */
+@mixin placeholder-animate
+
+	&:not(:placeholder-shown) + label
+			transform: translateY(-4rem) scale(1.3)
+
+	&:focus + label
+		transform: translateY(-4rem) scale(1.3)
+
+
+
+
+// For loop
+
+//@for $i from 0 through  4 // If to is used, the final number is excluded; if through is used, it's included.
+//		.feature__#{$i}
+//			opacity: 0
+//			margin: 10% 0

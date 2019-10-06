@@ -1,0 +1,62 @@
+// -----------------------------------------------------------------------------
+// REVIEWS
+// -----------------------------------------------------------------------------
+
+.review
+	position: relative
+	margin: 0 0 3.5rem 0
+	padding: 3rem
+	overflow: hidden
+	background-color: $color-white
+	box-shadow: $shadow-light
+
+	&::before
+		position: absolute
+		top: -2.9rem
+		left: -1rem
+		color: $color-grey-light-2
+		font-size: 20rem
+		line-height: 1
+		content: "\201C"
+
+
+.review__quote
+	position: relative
+	z-index: 10
+	margin: 0 0 2rem 0
+	text-align: initial
+
+
+.review__user
+	display: flex
+	align-items: center
+
+
+.review__photo
+	width: 4.5rem
+	height: 4.5rem
+	margin-right: 1.5rem
+	border-radius: 50%
+
+
+.review__user-box
+	margin-right: auto
+
+
+.review__user-name
+	margin-bottom: 0.4rem
+	font-weight: 600
+	font-size: 1.1rem
+	text-transform: uppercase
+
+
+.review__user-date
+	color: $color-grey-dark-3
+	font-size: 1rem
+	text-align: initial
+
+
+.review__rating
+	color: $color-primary
+	font-weight: 300
+	font-size: 2.2rem

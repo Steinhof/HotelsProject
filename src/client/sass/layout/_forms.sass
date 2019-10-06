@@ -1,0 +1,36 @@
+// -----------------------------------------------------------------------------
+// FORMS
+// -----------------------------------------------------------------------------
+
+.header__search-form
+	display: flex
+	width: 40%
+
+	+media('<phone')
+		order: 1
+		width: 100%
+
+
+.search-form__input
+	width: 90%
+	margin-right: -4.5rem
+	padding: 0.7rem 2rem
+	font-size: inherit
+	background-color: $color-grey-light-2
+	border: 0
+	border-radius: 100px
+	transition: all 0.2s
+
+	+media('<phone')
+		width: 100%
+
+	&:placeholder-shown
+		color: $color-grey-dark-3
+
+	&:focus
+		width: 100%
+		color: $color-black
+		background-color: $color-grey-light-3
+		outline: none
+
+

@@ -1,0 +1,35 @@
+SPECIFIC STYLES
+
+        * SASS *
+1. Dont't nest selectors unnecessarily
+2. Make heavy use of classes
+3. Rarely use @extend, because it creates more class selectors
+4. Use @mixin for repeating abstract styles
+5. Margins in one direction (prevents collapse)
+6. ORDER: ['Positioning', 'Box Model', 'Typography', 'Visual', 'Animation', 'Misc']
+7. Styles in html order
+8. Ignore !important
+9. // for sections and /* */ for comments
+
+
+        * CSS SIZES *
+1. Default font size is 10px (62.5% of 16px)
+2. Typography: em / rem / @function
+  a) Headings: vw / vw
+  b) Modules (aside, sidebar): rem
+3. Forms & form elements: em
+4. Buttons & icons: em / rem
+5. Layout-elements: % / vh / vw
+6. Padding / margin between elements: rem / %
+7. @media queries: px
+
+
+        * HTML *
+1. Concrete class goes first (descending classes)
+2. Write class attribute first
+3. Write full alt description
+4. Section > Section styles > next
+5. Create only the necessary elements
+6. Semantic element > div element
+
+        * TS *

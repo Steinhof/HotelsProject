@@ -1,0 +1,48 @@
+// -----------------------------------------------------------------------------
+// BASIC STYLES
+// -----------------------------------------------------------------------------
+
+html
+	/* This defines what 1 rem is */
+	font-size: 62.5%
+	/* 1rem = 10px; 10/16px = 62.5% */
+
+	/* Smooth moves */
+	scroll-behavior: smooth
+
+	+media('<desktop')
+		font-size: 56.25%
+	/* 1 rem = 9px; 9/16 = 56.25%; width < 1200 */
+
+	+media('<tablet')
+		font-size: 50%
+	/* 1rem = 8px; 8/16 = 50%; width < 900 */ //700 - last will be applied
+
+	+media('>big-desktop')
+		font-size: 75%
+/* 1 rem = 12px; 12/16 = 75%; width > 1800 */
+
+
+body
+	position: relative
+	display: flex
+	flex: 1 1 auto
+	flex-direction: column
+	min-width: 320px
+	//min-height: 100vh
+	overflow-x: hidden
+	color: $color-grey-dark-2
+	font-family: $default-font
+	line-height: 1.65
+	word-wrap: break-word
+	text-rendering: optimizeSpeed
+	background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark)
+	background-repeat: no-repeat
+	background-size: cover
+	box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3)
+
+	+media('>=big-desktop')
+		margin: 0 calc(50vw - 900px)
+
+	+media('>=desktop')
+		margin: 0 calc(50vw - 600px)

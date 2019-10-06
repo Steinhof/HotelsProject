@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "pretty": true,
+    "noImplicitThis": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedParameters": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "alwaysStrict": true,
+    "declaration": true,
+    "noEmit": true,
+    "incremental": true,
+    "composite": true,
+    "target": "es6",
+    "module": "es6",
+    "sourceMap": true,
+    "downlevelIteration": true,
+    "allowJs": true,
+    "checkJs": false,
+    "lib": ["dom", "es5"]
+  },
+  "exclude": [
+    "node_modules",
+    "**/*.test.ts"
+  ]
+}

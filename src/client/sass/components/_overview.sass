@@ -1,0 +1,42 @@
+// -----------------------------------------------------------------------------
+// OVERVIEW
+// -----------------------------------------------------------------------------
+
+.overview
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+
+
+.overview__info-hotel
+	display: inline-flex
+	align-items: center
+	margin-left: 1rem
+
+	+media('<phone')
+		display: block
+
+
+.overview__info-stats
+	display: flex
+	align-items: center
+	font-size: 1.2rem
+
+
+.overview__rating
+	align-self: stretch
+	margin-left: 3rem
+	padding: 1rem 1.5rem
+	color: $color-white
+	text-align: center
+	background-color: $color-primary
+
+
+.overview__rating--average
+	font-weight: 300
+	+font-size(2.25rem)
+
+
+.overview__rating--count
+	font-size: 0.8rem
+	text-transform: uppercase

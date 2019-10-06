@@ -1,0 +1,51 @@
+// -----------------------------------------------------------------------------
+// DESCRIPTION
+// -----------------------------------------------------------------------------
+
+.description__list
+	display: flex
+	flex-wrap: wrap
+	margin: 3rem 0
+	padding: 3rem 0
+	list-style: none
+	border-top: $line
+	border-bottom: $line
+
+
+.description__list-item
+	display: flex
+	flex-basis: 50%
+	flex-grow: 0
+	flex-shrink: 0
+	align-items: flex-end
+	margin-bottom: 0.7rem
+
+	&:before
+		display: inline-block
+		width: 2.4rem
+		height: 2.4rem
+		color: currentColor
+		background-image: url('/img/arrow.svg')
+		background-size: cover
+		content: " "
+
+
+.recommend
+	display: flex
+	align-items: center
+	color: $color-grey-dark-3
+
+
+.recommend__count
+	margin-right: auto
+
+
+.recommend__photo
+	box-sizing: content-box
+	width: 4rem
+	height: 4rem
+	border: 3px solid $color-white
+	border-radius: 50%
+
+	&:not(:last-child)
+		margin-right: -1.5rem
