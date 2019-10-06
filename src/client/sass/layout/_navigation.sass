@@ -5,10 +5,16 @@
 .side-nav__list
 	margin-top: 3.5rem
 	list-style: none
+
 	+media('<desktop')
 		display: flex
 		flex-wrap: wrap
 		margin: 0
+
+	+media('ie11')
+		flex-wrap: wrap
+		margin: 0
+		display: flex
 
 
 .side-nav__item
@@ -16,6 +22,9 @@
 	+font-size(1rem)
 
 	+media('<desktop')
+		flex-grow: 1
+
+	+media('ie11')
 		flex-grow: 1
 
 
